@@ -38,6 +38,11 @@ const categoryItemId = async id => {
 
 const displayCategoryItemId = data => {
     // console.log(data)
+    const itemsFound = document.getElementById('items-found');
+    itemsFound.innerHTML = `
+        <p class="p-3 bg-white rounded-3">${data.length} items found</p>
+    `
+    // console.log(data.length);
     const categoryContainer = document.getElementById('category-container');
     categoryContainer.textContent = '';
     data.forEach(data => {

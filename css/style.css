@@ -17,7 +17,8 @@ body {
     background-color: #5D5FEF;
 }
 .color-text-iris,
-.fa-arrow-right {
+.fa-arrow-right,
+.btn-border {
     color:#5D5FEF;
 }
 .color-text-eye,
@@ -52,6 +53,18 @@ body {
 
 
 /* main section start */
+/* category found part start */
+.btn-border {
+    border: 1px solid #5D5FEF;
+    background-color: transparent;
+}
+.text-default {
+    font-size: 14px;
+    color: #ABADC6;
+}
+/* category found part end */
+
+
 /* category part start */
 .color-title {
     color: #121221;
