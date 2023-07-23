@@ -16,8 +16,6 @@ const loadingNavbarFetchData = async () => {
 const displayNavbarFetchData = names => {
     const navbarItems = document.getElementById('navbar-items');
     names.forEach(name => {
-        // console.log(name.category_id)
-        // console.log(name)
         const navbarDiv = document.createElement('div');
         navbarDiv.innerHTML = `
             <a class="bt p-2 color-text-gray text-decoration-none navbar-hover" onclick=categoryItemId('${name.category_id}')>${name.category_name}</a>

@@ -14,20 +14,17 @@ const categoryItemId = async id => {
 
 // display categroy fetch data
 const displayCategoryItemId = data => {
-    // console.log(data)
     loadingSpinner(true);
+    data.sort((a, b) => {
+        return b.total_view - a.total_view
+    });
     const itemsFound = document.getElementById('items-found');
     itemsFound.innerHTML = `
         <p class="p-3 bg-white rounded-3">${data.length} items found</p>
     `
-    // console.log(data.length);
     const categoryContainer = document.getElementById('category-container');
     categoryContainer.textContent = '';
     data.forEach(data => {
-        // console.log(data._id);
-        // console.log(data.others_info.is_todays_pick)
-        // const a = data.others_info.is_todays_pick
-        
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('row');
         categoryDiv.classList.add('align-items-center');
