@@ -50,6 +50,7 @@ const displayCategoryItemId = data => {
         categoryDiv.classList.add('px-2');
         categoryDiv.classList.add('bg-white');
         categoryDiv.classList.add('rounded-3');
+        categoryDiv.classList.add('shadow-sm');
         categoryDiv.innerHTML = `
         <div class="col-12 col-md-3 text-center text-md-start">
             <img class="img-fluid rounded-3" src="${data.thumbnail_url}" alt="">
