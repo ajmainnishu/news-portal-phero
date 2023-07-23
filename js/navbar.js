@@ -1,3 +1,4 @@
+// navbar fetch data
 const loadingNavbarFetchData = async () => {
     try {
         const url = `https://openapi.programming-hero.com/api/news/categories`;
@@ -10,6 +11,8 @@ const loadingNavbarFetchData = async () => {
     }
 }
 
+
+// display navbar fetch data
 const displayNavbarFetchData = names => {
     const navbarItems = document.getElementById('navbar-items');
     names.forEach(name => {
@@ -21,9 +24,15 @@ const displayNavbarFetchData = names => {
         `
         navbarItems.appendChild(navbarDiv);
     })
+    
 }
 
 
+// navbar loading
+loadingNavbarFetchData();
+
+
+// category fetch data
 const categoryItemId = async id => {
     try {
         const url = `https://openapi.programming-hero.com/api/news/category/${id}`;
@@ -36,8 +45,11 @@ const categoryItemId = async id => {
     }
 }
 
+
+// display categroy fetch data
 const displayCategoryItemId = data => {
     // console.log(data)
+    loadingSpinner(true);
     const itemsFound = document.getElementById('items-found');
     itemsFound.innerHTML = `
         <p class="p-3 bg-white rounded-3">${data.length} items found</p>
@@ -96,14 +108,11 @@ const displayCategoryItemId = data => {
         `
         categoryContainer.appendChild(categoryDiv);
     })
+    loadingSpinner(false);
 }
 
 
-loadingNavbarFetchData();
-
-
-
-
+// category fetch data
 const categoryDetails = async id => {
     try {
         const url = `https://openapi.programming-hero.com/api/news/${id}`;
@@ -118,6 +127,7 @@ const categoryDetails = async id => {
 }
 
 
+// category modal
 const modalItemDetails = data => {
     console.log(data);
     const categoryDetailsLabel = document.getElementById('categoryDetailsLabel');
@@ -130,4 +140,18 @@ const modalItemDetails = data => {
         <p><b>Badge: </b>${data.rating.badge ? data.rating.badge : 'No Data Found'}</p>
         <p><b>Views: </b>${data.total_view ? data.total_view : 'No Data Found'}</p>
     `
+}
+
+
+// spinner
+const loadingSpinner = (value) => {
+    const spinner = document.getElementById('spinner');
+    if (value) {
+        spinner.classList.remove('d-none');
+        console.log('Hello')
+    }
+    else {
+        spinner.classList.add('d-none');
+        console.log('nai')
+    }
 }
