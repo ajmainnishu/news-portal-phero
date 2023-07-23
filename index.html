@@ -55,11 +55,22 @@
 
 
     <!-- main section start -->
-    <main>
+    <main class="container">
+
+
+        <!-- <section>
+            <div>
+                <button onclick="pickLoading()">Pick</button>
+
+                <button id="trending">Trending</button>
+            </div>
+        </section> -->
+
+
 
         <!-- category details section start -->
-        <section id="category-container" class="container py-5">
-            <div class="row align-items-center mb-4 py-4 px-2 bg-white rounded-3 shadow-sm">
+        <section id="category-container" class="py-5">
+            <!-- <div class="row align-items-center mb-4 py-4 px-2 bg-white rounded-3 shadow-sm">
                 <div class="col-12 col-md-3 text-center text-md-start">
                     <img class="img-fluid" src="./images/main/person/person_1.png" alt="">
                 </div>
@@ -206,9 +217,33 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- category details section end -->
+
+        
+        <!-- modal section start -->
+        <section>
+            <div class="modal fade" id="categoryDetails" tabindex="-1" aria-labelledby="categoryDetailsLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="categoryDetailsLabel"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="body-modal" class="modal-body"></div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- modal section end -->
+
+
+
+
 
     </main>
     <!-- main section end -->
