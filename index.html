@@ -7,6 +7,9 @@
     <!-- website title -->
     <title>News Portal</title>
 
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- bootstrap css cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -39,7 +42,11 @@
         <hr>
 
         <!-- bottom navigation -->
-        <nav id="navbar-items" class="d-flex justify-content-between py-4"></nav>
+        <nav id="navbar-items" class="d-flex flex-md-row flex-column justify-content-lg-between justify-content-md-evenly text-center  py-4 flex-wrap flex-lg-nowrap">
+            <div>
+                <a class="bt p-2 color-text-gray text-decoration-none navbar-hover" href="">Home</a>
+            </div>
+        </nav>
         
     </header>
     <!-- header section end -->
@@ -47,83 +54,165 @@
 
 
 
-
+    <!-- main section start -->
     <main>
-        <section id="category-container" class="container">
 
-
-
-            <!-- <div class="row mb-3">
-                <div class="col-3">
-                    <img class="img-fluid" src="./unsplash_EhTcC9sYXsw.png" alt="">
+        <!-- category details section start -->
+        <section id="category-container" class="container py-5">
+            <div class="row align-items-center mb-4 py-4 px-2 bg-white rounded-3">
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <img class="img-fluid" src="./images/main/person/person_1.png" alt="">
                 </div>
-                <div class="col-9">
-                    <h3>The best fashion influencers to follow for sartorial inspiration</h3>
-                    <p>From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up.
+                <div class="col-12 col-md-9 mt-3 mt-md-0">
+                    <h3 class="fw-bold color-title">The best fashion influencers to follow for sartorial inspiration</h3>
+                    <p class="color-para">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up.
                     <br><br>
                     Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <div class="d-flex align-items-center my-3 my-md-0">
                             <div>
-                                <img src="./Rectangle 19.png" alt="">
+                                <img class="rounded-3" src="./images/main/author/author-photo.png" alt="">
                             </div>
                             <div class="ps-2">
-                                <p class="mb-0">Jane Cooper</p>
-                                <p class="mb-0">Jan 10, 2022 </p>
+                                <p class="mb-0 color-text-author">Jane Cooper</p>
+                                <p class="mb-0 color-text-publish">Jan 10, 2022 </p>
                             </div>
                         </div>
-                        <div class="d-flex">
-                            <div>h1</div>
-                            <p class="mb-0">1.5M</p>
+                        <div class="d-flex my-3 my-md-0">
+                            <div><i class="fa-regular fa-eye"></i></div>
+                            <p class="mb-0 ms-2 fw-bold color-text-eye">1.5M</p>
                         </div>
-                        <div>
-                            <p class="mb-0">star</p>
+                        <div class="d-flex my-3 my-md-0">
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
                         </div>
-                        <div>
-                            <p class="mb-0">arrow</p>
+                        <div class="my-3 my-md-0">
+                            <p class="mb-0"><i class="fa-solid fa-arrow-right"></i></p>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-
-            <div class="row mb-3 p-3 bg-light">
-                <div class="col-3">
-                    <img class="img-fluid" src="./unsplash_EhTcC9sYXsw.png" alt="">
+            <div class="row align-items-center mb-4 py-4 px-2 bg-white rounded-3">
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <img class="img-fluid" src="./images/main/person/person_2.png" alt="">
                 </div>
-                <div class="col-9">
-                    <h3>The best fashion influencers to follow for sartorial inspiration</h3>
-                    <p>From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up.
+                <div class="col-12 col-md-9 mt-3 mt-md-0">
+                    <h3 class="fw-bold color-title">The best fashion influencers to follow for sartorial inspiration</h3>
+                    <p class="color-para">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up.
                     <br><br>
                     Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <div class="d-flex align-items-center my-3 my-md-0">
                             <div>
-                                <img src="./Rectangle 19.png" alt="">
+                                <img class="rounded-3" src="./images/main/author/author-photo.png" alt="">
                             </div>
                             <div class="ps-2">
-                                <p class="mb-0">Jane Cooper</p>
-                                <p class="mb-0">Jan 10, 2022 </p>
+                                <p class="mb-0 color-text-author">Jane Cooper</p>
+                                <p class="mb-0 color-text-publish">Jan 10, 2022 </p>
                             </div>
                         </div>
-                        <div class="d-flex">
-                            <div>h1</div>
-                            <p class="mb-0">1.5M</p>
+                        <div class="d-flex my-3 my-md-0">
+                            <div><i class="fa-regular fa-eye"></i></div>
+                            <p class="mb-0 ms-2 fw-bold color-text-eye">1.5M</p>
                         </div>
-                        <div>
-                            <p class="mb-0">star</p>
+                        <div class="d-flex my-3 my-md-0">
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
                         </div>
-                        <div>
-                            <p class="mb-0">arrow</p>
+                        <div class="my-3 my-md-0">
+                            <p class="mb-0"><i class="fa-solid fa-arrow-right"></i></p>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
+            <div class="row align-items-center mb-4 py-4 px-2 bg-white rounded-3">
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <img class="img-fluid" src="./images/main/person/person_3.png" alt="">
+                </div>
+                <div class="col-12 col-md-9 mt-3 mt-md-0">
+                    <h3 class="fw-bold color-title">The best fashion influencers to follow for sartorial inspiration</h3>
+                    <p class="color-para">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up.
+                    <br><br>
+                    Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <div class="d-flex align-items-center my-3 my-md-0">
+                            <div>
+                                <img class="rounded-3" src="./images/main/author/author-photo.png" alt="">
+                            </div>
+                            <div class="ps-2">
+                                <p class="mb-0 color-text-author">Jane Cooper</p>
+                                <p class="mb-0 color-text-publish">Jan 10, 2022 </p>
+                            </div>
+                        </div>
+                        <div class="d-flex my-3 my-md-0">
+                            <div><i class="fa-regular fa-eye"></i></div>
+                            <p class="mb-0 ms-2 fw-bold color-text-eye">1.5M</p>
+                        </div>
+                        <div class="d-flex my-3 my-md-0">
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                        </div>
+                        <div class="my-3 my-md-0">
+                            <p class="mb-0"><i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row align-items-center mb-4 py-4 px-2 bg-white rounded-3">
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <img class="img-fluid" src="./images/main/person/person_4.png" alt="">
+                </div>
+                <div class="col-12 col-md-9 mt-3 mt-md-0">
+                    <h3 class="fw-bold color-title">The best fashion influencers to follow for sartorial inspiration</h3>
+                    <p class="color-para">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up.
+                    <br><br>
+                    Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <div class="d-flex align-items-center my-3 my-md-0">
+                            <div>
+                                <img class="rounded-3" src="./images/main/author/author-photo.png" alt="">
+                            </div>
+                            <div class="ps-2">
+                                <p class="mb-0 color-text-author">Jane Cooper</p>
+                                <p class="mb-0 color-text-publish">Jan 10, 2022 </p>
+                            </div>
+                        </div>
+                        <div class="d-flex my-3 my-md-0">
+                            <div><i class="fa-regular fa-eye"></i></div>
+                            <p class="mb-0 ms-2 fw-bold color-text-eye">1.5M</p>
+                        </div>
+                        <div class="d-flex my-3 my-md-0">
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                            <p class="mb-0 mx-1"><i class="fa-regular fa-star"></i></p>
+                        </div>
+                        <div class="my-3 my-md-0">
+                            <p class="mb-0"><i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- category details section end -->
+
     </main>
+    <!-- main section end -->
+
 
 
 

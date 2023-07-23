@@ -8,6 +8,7 @@
 body {
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Roboto', sans-serif;
+    background-color: #F6F6F6;
 }
 .font-playfair {
     font-family: 'Playfair Display', serif;
@@ -15,8 +16,13 @@ body {
 .color-bg-iris {
     background-color: #5D5FEF;
 }
-.color-text-iris {
+.color-text-iris,
+.fa-arrow-right {
     color:#5D5FEF;
+}
+.color-text-eye,
+.fa-star-half-stroke {
+    color: #515151;
 }
 /* common utilities end */
 
@@ -42,3 +48,28 @@ body {
     cursor: pointer;
 }
 /* header section end */
+
+
+/* main section start */
+/* category part start */
+.color-title {
+    color: #121221;
+    font-size: 24px;
+}
+.color-para {
+    color: #949494;
+}
+.color-text-author {
+    color: #2B2C34;
+}
+.color-text-publish {
+    color: #718797;
+    font-size: 14px;
+}
+.author-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+/* category part end */
+/* main section end */
